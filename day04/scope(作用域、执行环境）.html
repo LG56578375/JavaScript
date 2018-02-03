@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+    <script>
+        var color1 = 'red';
+        function changeColor(){
+            var color2 = 'blue';
+            function swapColor(){
+                var color3 = color2;
+                color2 = color1;
+                color1 =color3;
+                //这里可以访问color1,2,3;
+            }
+            swapColor();//这里只能访问color1,2;
+        }
+        changeColor();//这里只能访问到color1
+    </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+    <script>
+//        function sum(x,y){
+//            return x+y;
+//        }
+//        function call1(num1,num2){
+//            return sum.call(this,num1,num2);
+//        }
+//        function apply1(num1,num2){
+//            return sum.apply(this,[num1,num2]);
+//        }
+//        var a = call1(10,20);
+//        var b = apply1(20,30);
+//        console.log(a,b);
+//        window.color = 'red';
+//        var obj = {color:'blue'};
+//        function showColor(){
+//            alert(this.color);
+//        }
+//        showColor().apply(obj);
+
+        function Obj(x,y){
+            this.x = x;
+            this.y = y;
+           return x*y;
+        }
+        function test(x,y){
+            return x+y;
+        }
+
+        var o =new Obj(10,20);
+        alert(test.call(o, o.x, o.y));
+
+    </script>
+    </body>
+</html>

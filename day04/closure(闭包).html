@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+    <script>
+        function test(x){
+            var temp = x;
+            return function(x){
+                temp+=x;
+                alert(temp);
+            }
+        }
+        var a = test(50);
+        a(10);
+        a(20);
+        a(30);
+    </script>
+    </body>
+</html>
