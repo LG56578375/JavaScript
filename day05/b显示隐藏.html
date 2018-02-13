@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <style>
+        #div1{
+            display: none;
+        }
+    </style>
+    <body>
+    <button id="btn">显示隐藏</button>
+    <div id="div1" >你要我怎样</div>
+    <script>
+
+        var oBtn = document.getElementById('btn');
+        var oDiv = document.getElementById('div1');
+        var flag = false;
+        oBtn.onclick = function () {
+            if(flag){
+                oDiv.style.display = 'none';
+
+            }else{
+                oDiv.style.display = 'block';
+            }
+            flag=!flag;
+        }
+    </script>
+    </body>
+</html>

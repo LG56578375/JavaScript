@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body id="body">
+    <button id="btn1">1</button>
+    <button id="btn2">2</button>
+    <script>
+        //涉及样式过多时，可通过改变link标签引入不同的css
+        var oBtn1 = document.getElementById('btn1');
+        var oBtn2 = document.getElementById('btn2');
+        var oBody= document.getElementById('body');
+        oBtn1.onclick = function () {
+            oBody.style.backgroundColor = 'red';
+        };
+        oBtn2.onclick = function () {
+            oBody.style.backgroundColor = 'green';
+        }
+    </script>
+    </body>
+</html>
